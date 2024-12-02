@@ -1,4 +1,4 @@
-package stream_api.work;
+package stream_api;
 
 public class Employee implements Comparable<Employee>{
 

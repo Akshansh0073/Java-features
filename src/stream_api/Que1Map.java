@@ -1,4 +1,4 @@
-package stream_api.work;
+package stream_api;
 
 import java.util.Arrays;
 import java.util.List;
