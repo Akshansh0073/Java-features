@@ -51,20 +51,6 @@ public class Que4MergeTwoArray {
         {
             System.out.println("Two strings are not anagrams");
         }
-        
-        // 6
-        List<Integer> listOfIntegers = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
-        listOfIntegers.stream().sorted().limit(3).forEach(c1 -> System.out.print(" "+c1));
-        System.out.println();
-        listOfIntegers.stream().sorted(Comparator.reverseOrder()).limit(3).forEach(c1 -> System.out.print(" "+c1));
-        System.out.println();
-        
-        // 7
-        int i = 15623;        
-        Integer sumOfDigits = Stream.of(String.valueOf(i).split("")).collect(Collectors.summingInt(Integer::parseInt));
-        System.out.println(sumOfDigits);
-        
-        //
     }
 
 }
