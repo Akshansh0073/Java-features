@@ -1,6 +1,7 @@
 package stream_api;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -14,11 +15,14 @@ public class Que1Map {
 				.collect(Collectors.groupingBy(c -> c));
 		System.out.println(collect3);
 
+		
+		// Frequency of each character
 		Map<Character, Long> collect4 = str.chars().mapToObj(c -> (char) c)
 				.collect(Collectors.groupingBy(c -> c, Collectors.counting()));
 
 		System.out.println(collect4);
 
+		// Even number
 		List<Integer> list1 = List.of(1, 2, 3, 45, 62, 61, 4, 3, 22, 6, 73);
 		List<Integer> collect = list1.stream().filter(n -> n % 2 == 0).collect(Collectors.toList());
 		System.out.println(collect);
@@ -34,11 +38,10 @@ public class Que1Map {
 
 		List<String> names = Arrays.asList("John", "Jane", "Jake", "Jill", "Jessie");
 
+		
 		Map<Integer, List<String>> groupedByLength = names.stream().collect(Collectors.groupingBy(s -> s.length()));
 		System.out.println(groupedByLength);
-		
-		
-		
 
+		
 	}
 }
